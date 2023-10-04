@@ -1,10 +1,13 @@
 :root {
-  --color1: #eb7565;
-  --color2: #61c4b7;
-  --color3: #552049;
-  --color4: #7a746e;
-  --color5: #030303;
-  --color6: #fff7f0;
+  --mauve: #755cde;
+  --yellow: #f6a560;
+  --pink: #f39e9e;
+  --orange: #eb7565;
+  --green: #61c4b7;
+  --purple: #552049;
+  --brown: #7a746e;
+  --black: #030303;
+  --white: #fff7f0;
 }
 
 *,
@@ -17,13 +20,13 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--color6);
+  background-color: var(--white);
 }
 
 .btn {
   border-radius: 50px;
   border: none;
-  color: var(--color6);
+  color: var(--white);
   padding: 0.8em 2.5em;
   font-weight: bolder;
   font-size: 1rem;
@@ -31,15 +34,31 @@ body {
 }
 
 .black {
-    background-color: var(--color5);
+  background-color: var(--black);
+}
+
+.black:hover {
+  background-color: var(--mauve);
 }
 
 .orange {
-    background-color: var(--color1);
-    margin-top: 1em;
+  background-color: var(--orange);
 }
 
-nav, footer {
+.orange:hover {
+  background-color: var(--yellow);
+}
+
+.work-title {
+  margin-top: 6rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin-bottom: 2rem;
+}
+
+nav,
+footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -48,7 +67,7 @@ nav, footer {
 }
 
 .title {
-  font-size: 2.50rem;
+  font-size: 2.5rem;
   text-align: center;
   color: var(--color5);
   margin: 0.5em 1em;
@@ -61,24 +80,50 @@ header p {
   margin: 0 2em;
 }
 
-.picture, .slide {
-    width: 100%;
+.picture,
+.slide {
+  width: 100%;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  gap: 1rem;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.arrow {
+  width: 15px;
 }
 
 .presentation {
-    text-align: center;
-    margin: 0 1em;
+  text-align: center;
+  margin: 0 1em;
 }
 
 .presentation p {
-    line-height: 1.65;
+  line-height: 1.65;
+}
+
+.wrapper p, .presentation p {
+  margin-bottom: 2rem;
 }
 
 .contact {
-    background-color: var(--color5);
-    margin: 3em 1em;
-    border-radius: 10px;
-    color: var(--color6);
-    padding: 3em 2em;
-    text-align: center;
+  background-color: var(--black);
+  margin: 3em 1em;
+  border-radius: 10px;
+  color: var(--white);
+  padding: 3em 2em;
+  text-align: center;
 }
