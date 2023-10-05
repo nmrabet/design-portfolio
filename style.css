@@ -51,7 +51,7 @@ body {
 
 nav,
 footer {
-  margin: 2em;
+  margin: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -160,9 +160,19 @@ header p {
   margin-bottom: 2rem;
 }
 
+.image-container .caroussel {
+  display: flex;
+  gap: 1em;
+  transition: all 0.4s ease;
+}
+
 .picture,
 .slide {
   max-width: 100%;
+}
+
+.slide {
+  border-radius: 10px;
 }
 
 .picture {
@@ -212,7 +222,7 @@ header p {
 
 .contact {
   background-color: var(--black);
-  margin: 3em 2em;
+  margin: 3em 1em;
   border-radius: 10px;
   color: var(--white);
   padding: 3em 2em;
@@ -221,7 +231,7 @@ header p {
 
 @media screen and (min-width: 550px) {
   .hero {
-    margin: 2em;
+    margin: 2em 1em;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: 550px;
@@ -315,7 +325,7 @@ header p {
     gap: 3em;
   }
   .contact {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 3em auto;
   }
 
