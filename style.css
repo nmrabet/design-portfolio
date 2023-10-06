@@ -167,6 +167,7 @@ header p {
   scroll-behavior: smooth;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  overflow-y: auto;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
